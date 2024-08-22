@@ -13,7 +13,13 @@ module.exports = {
             // => @media (min-width: 1280px) { ... }
         },
         extend: {
-            
+            backgroundImage:{
+                'heropage':"url('/src/assets/backgroundImg.jpg')"
+            },
+            fontFamily:{
+                'poppins':['Poppins',' system-ui']
+            }
+
         },
     },
     plugins: [

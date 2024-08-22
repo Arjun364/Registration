@@ -12,11 +12,37 @@
     <title>Project Template</title>
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/7f4f6e1f8e.js" crossorigin="anonymous"></script>
+    <!-- index.js link -->
+    <script src="./index.js"></script>
 </head>
 
 <body>
-    <h1 class="text-red-600 text-2xl font-medium">Hello world!</h1>
-    
+    <form
+        class="w-[25rem] h-[30rem] bg-white/30 rounded-md shadow-xl backdrop-blur-[3px] flex flex-col items-center justify-center gap-3  px-[1rem]">
+        <!-- title -->
+        <h1 class="text-[2.5rem] font-bold">Registration</h1>
+        <label for="name" class="flex flex-col w-full font-medium focus:text-red-400">
+            Name
+            <input type="text" id="name" class="rounded-md border-2 border-black focus:ring-0 focus:border-red-400  focus:text-red-400">
+            <span id="error" class="text-sm text-red-500"></span>
+        </label>
+        <label for="email" class="flex flex-col w-full font-medium">
+            Email
+            <input type="email" id="email" class="rounded-md border-2 border-black focus:ring-0 focus:border-red-400 focus:text-red-400">
+            <span id="error2" class="text-sm text-red-500"></span>
+        </label>
+        <label for="password" class="flex flex-col w-full font-medium">
+            Password
+            <input type="password" id="password"
+                class="rounded-md border-2 border-black focus:ring-0 focus:border-red-400 focus:text-red-400">
+                <span id="error3" class="text-sm text-red-500"></span>
+
+        </label>
+        <button
+            class="w-full h-[3rem] bg-red-950 hover:bg-red-400 hover:shadow-lg transition-all duration-200 text-white uppercase rounded-md"
+            onclick="btn(event)">Sign UP</button>
+        <span id="error"></span>
+    </form>
     <!-- flowbite javasript file -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
